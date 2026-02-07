@@ -221,6 +221,16 @@ body {
   color: var(--muted);
 }
 
+.constraints {
+  margin-top: 12px;
+  padding-left: 18px;
+}
+
+.constraints li {
+  font-size: .85rem;
+  color: var(--muted);
+}
+
 .project-tech {
   margin-top: 12px;
   font-size: .85rem;
@@ -247,6 +257,31 @@ body {
   border: none;
 }
 
+.education-card {
+  max-width: 760px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.edu-focus {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+.edu-coursework {
+  margin-top: 16px;
+  padding-left: 18px;
+  columns: 2;
+}
+
+.edu-coursework li {
+  font-size: .85rem;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
 .socials {
   display: flex;
   gap: 26px;
@@ -270,9 +305,10 @@ footer {
   color: var(--muted);
 }
 
-/* ================= MOBILE FIXES ================= */
+/* ================= PHONE ONLY FIXES ================= */
 
 @media (max-width: 768px) {
+
   .navbar {
     padding: 16px 20px;
   }
@@ -313,8 +349,68 @@ footer {
     padding: 60px 20px;
   }
 
-  .project-grid {
-    grid-template-columns: 1fr;
+  .section h2 {
+    font-size: 1.9rem;
+  }
+
+  .project-card {
+    padding: 22px;
+  }
+
+  .project-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .project-desc {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .constraints {
+    margin-top: 8px;
+  }
+
+  .constraints li {
+    font-size: 0.85rem;
+  }
+
+  .project-actions {
+    flex-direction: column;
+  }
+
+  .project-actions a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .education-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .edu-focus {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .edu-coursework {
+    columns: 1;
+  }
+
+  .edu-coursework li {
+    font-size: 0.9rem;
+  }
+
+  .socials {
+    gap: 20px;
+  }
+
+  .socials svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  footer {
+    margin-top: 40px;
   }
 }
 
