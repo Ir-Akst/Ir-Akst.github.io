@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akshat | AI & Data Science Intern</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -18,39 +18,45 @@
   <span></span><span></span><span></span>
 </div>
 
-<nav>
+<nav class="navbar">
   <div class="logo">Akshat</div>
-  <ul>
-    <li><a href="#">Home</a></li>
+  <ul class="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a class="nav-resume" href="assets/Akshat_Resume.pdf" download>Resume</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li>
+      <a href="assets/Akshat_Resume.pdf" download class="nav-resume">
+        Resume
+      </a>
+    </li>
   </ul>
 </nav>
 
-<section class="hero">
+<section id="home" class="hero">
   <div class="hero-text reveal">
     <h1>Akshat</h1>
 
     <p>
-      AI & Data Science student engineer focused on building reliable,
-      data-driven systems and learning production-grade workflows.
+      Computer Science undergraduate focused on building practical,
+      data-driven systems and strengthening core engineering fundamentals.
     </p>
 
     <ul class="focus">
-      <li>Building backend-heavy data projects</li>
-      <li>Improving problem-solving and system thinking</li>
-      <li>Learning production ML and analytics workflows</li>
+      <li>Backend-heavy data projects</li>
+      <li>Problem solving and system thinking</li>
+      <li>Applied machine learning foundations</li>
     </ul>
 
     <div class="hero-actions">
       <a class="cta" href="#projects">View my work →</a>
-      <a class="resume-btn" href="assets/Akshat_Resume.pdf" download>Download Resume</a>
+      <a class="resume-btn" href="assets/Akshat_Resume.pdf" download>
+        Download Resume
+      </a>
     </div>
   </div>
 
   <div class="hero-image reveal">
-    <img src="assets/profile.jpg" alt="Akshat profile photo">
+    <img src="assets/profile.jpg" alt="Akshat">
   </div>
 </section>
 
@@ -62,18 +68,17 @@
       <h3>LeetCode Daily Notification System</h3>
 
       <p class="project-desc">
-        Reduced decision fatigue in DSA practice by automatically selecting
-        daily problems based on past performance and difficulty trends.
+        Automated daily DSA problem selection using rule-based logic
+        to reduce decision fatigue and improve consistency.
       </p>
 
       <p class="project-learning">
-        Learned to design rule-based systems, structure data cleanly,
-        and automate workflows reliably.
+        Designed clean automation pipelines and structured data workflows.
       </p>
 
       <ul class="constraints">
-        <li>Used rule-based logic instead of ML for reliability</li>
-        <li>Focused on clarity over premature optimization</li>
+        <li>Rule-based logic over ML for reliability</li>
+        <li>Clarity prioritized over premature optimization</li>
       </ul>
 
       <p class="project-tech">
@@ -81,8 +86,12 @@
       </p>
 
       <div class="project-actions">
-        <a href="https://github.com/yourusername/leetcode-system" target="_blank">View Code</a>
-        <a class="primary" href="projects/leetcode.html">View Demo →</a>
+        <a href="https://github.com/yourusername/leetcode-system" target="_blank">
+          View Code
+        </a>
+        <a class="primary" href="projects/leetcode.html">
+          View Demo →
+        </a>
       </div>
     </div>
 
@@ -90,18 +99,17 @@
       <h3>AI Trading Strategy Analyzer</h3>
 
       <p class="project-desc">
-        Built a backtesting engine to evaluate trading strategies using
-        historical market data before deploying real capital.
+        Backtesting engine for evaluating trading strategies on historical
+        market data before real deployment.
       </p>
 
       <p class="project-learning">
-        Learned about overfitting, risk metrics, and why explainability
-        matters more than raw accuracy.
+        Learned about overfitting, risk metrics, and explainability.
       </p>
 
       <ul class="constraints">
-        <li>Prioritized explainability over black-box models</li>
-        <li>Validated logic before performance tuning</li>
+        <li>Explainability over black-box accuracy</li>
+        <li>Logic validation before tuning performance</li>
       </ul>
 
       <p class="project-tech">
@@ -109,29 +117,36 @@
       </p>
 
       <div class="project-actions">
-        <a href="https://github.com/yourusername/trading-analyzer" target="_blank">View Code</a>
-        <a class="primary" href="projects/trading.html">View Demo →</a>
+        <a href="https://github.com/yourusername/trading-analyzer" target="_blank">
+          View Code
+        </a>
+        <a class="primary" href="projects/trading.html">
+          View Demo →
+        </a>
       </div>
     </div>
   </div>
 </section>
 
-<section id="skills" class="section reveal">
-  <h2>Skills</h2>
+<section id="certifications" class="section reveal">
+  <h2>Certifications & Leadership</h2>
 
-  <div class="skills-grid">
-    <span>Python</span>
-    <span>Data Structures & Logic</span>
-    <span>SQL</span>
-    <span>Pandas & NumPy</span>
-    <span>Statistics</span>
-    <span>Machine Learning (Basics)</span>
-    <span>Git & GitHub</span>
-    <span>Linux (Basics)</span>
+  <div class="education-card">
+    <h3>2nd Year Lead — Microsoft Learn Student Ambassadors (MLSA), KIET</h3>
+    <p class="edu-focus">
+      Coordinating peer learning initiatives, technical sessions,
+      and community-driven developer activities.
+    </p>
+
+    <h3 style="margin-top:16px;">Microsoft Certified: Azure Fundamentals</h3>
+    <p class="edu-focus">
+      Built foundational understanding of cloud services, security,
+      and deployment models.
+    </p>
   </div>
 </section>
 
-<section id="education" class="section reveal">
+<section class="section reveal">
   <h2>Education</h2>
 
   <div class="education-card">
@@ -146,56 +161,25 @@
     </p>
 
     <p class="edu-focus">
-      Focused on core computer science fundamentals including data structures,
-      databases, statistics, and applied machine learning, alongside
-      hands-on system-building projects.
+      Focused on core CS fundamentals including data structures,
+      databases, statistics, and applied machine learning.
     </p>
 
     <ul class="edu-coursework">
       <li>Data Structures & Algorithms</li>
       <li>Database Management Systems</li>
       <li>Probability & Statistics</li>
-      <li>Machine Learning (Foundations)</li>
-      <li>Operating Systems (Basics)</li>
+      <li>Machine Learning Foundations</li>
+      <li>Operating Systems Basics</li>
     </ul>
   </div>
-</section>
-
-<section class="section reveal">
-  <h2>Leadership & Certifications</h2>
-
-  <div class="education-card">
-    <h3>2nd Year Lead — Microsoft Learn Student Ambassadors (MLSA), KIET</h3>
-
-    <p class="edu-focus">
-      Coordinating peer learning initiatives, technical sessions, and
-      community-driven activities focused on developer growth.
-    </p>
-
-    <h3 style="margin-top:16px;">Microsoft Certified: Azure Fundamentals</h3>
-
-    <p class="edu-focus">
-      Built foundational understanding of cloud services, security,
-      and deployment models.
-    </p>
-  </div>
-</section>
-
-<section class="section reveal">
-  <h2>Signals</h2>
-
-  <ul class="signals">
-    <li>Built multiple end-to-end projects independently</li>
-    <li>Comfortable learning from documentation and debugging</li>
-    <li>Prefer correctness and clarity over flashy demos</li>
-  </ul>
 </section>
 
 <section id="contact" class="section reveal">
   <h2>Connect</h2>
 
   <p>
-    Actively seeking internship opportunities where I can learn,
+    Open to internship opportunities where I can learn,
     contribute, and grow as an engineer.
   </p>
 
